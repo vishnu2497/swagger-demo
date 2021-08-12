@@ -7,14 +7,17 @@ public class TestSchema {
     private String place;
 
     private String test;
+    
+    private String aa;
 
     public TestSchema() {
     }
 
-    public TestSchema(String name, String place, String test) {
+    public TestSchema(String name, String place, String test,String aa) {
         this.name = name;
         this.place = place;
         this.test = test;
+        this.aa=aa;
     }
 
     public String getName() {
@@ -39,6 +42,14 @@ public class TestSchema {
 
     public void setTest(String test) {
         this.test = test;
+    }
+    
+     public String getAa() {
+        return aa;
+    }
+
+    public void setName(String aa) {
+        this.aa = aa;
     }
 
     @Override
