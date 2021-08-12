@@ -48,7 +48,7 @@ public class TestSchema {
         return aa;
     }
 
-    public void setName(String aa) {
+    public void setAa(String aa) {
         this.aa = aa;
     }
 
