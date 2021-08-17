@@ -7,5 +7,6 @@ RUN apk add --update-cache bash libc6-compat && \
 RUN apk -Uuv add groff less python3 py-pip 
 ADD target/swagger-demo-0.0.1-SNAPSHOT.jar /opt/titan/APPLICATION.jar
 EXPOSE 8081
-RUN java -jar /opt/titan/APPLICATION.jar
+ADD start.bat /opt/titan/startjava && chmod 777 /opt/titan/startjava
+CMD ["/bin/bash","/opt/titan/startjava"]
 
