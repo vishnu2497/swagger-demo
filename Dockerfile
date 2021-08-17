@@ -8,6 +8,6 @@ RUN apk -Uuv add groff less python3 py-pip
 ADD target/swagger-demo-0.0.1-SNAPSHOT.jar /opt/titan/APPLICATION.jar
 EXPOSE 8081
 ADD start.bat /opt/titan/startjava 
-RUN chmod 777 /opt/titan/startjava
+RUN chmod 777 /opt/titan/startjava && chmod 777 /opt/titan/APPLICATION.jar
 CMD ["/bin/bash","/opt/titan/startjava"]
 
